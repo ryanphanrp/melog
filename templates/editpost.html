@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<hr>
+<center>
+    <h2>fromtinhtutewithlove</h2>
+    <h3>update stories</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Update">
+    </form>
+</center>
+{% endblock main %}

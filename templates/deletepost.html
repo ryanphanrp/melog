@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<hr>
+<center>
+    <h2>fromtinhtutewithlove</h2>
+    <h3>/delete this stories</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <p>Are you sure want to delete this story? - <input type="submit" value="yes"></p>
+    </form>
+</center>
+{% endblock main %}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>ME stories</title>
+</head>
+<body>
+    <center>
+        <a href="{% url 'home' %}"><h1>blackpinkinhoainhon</h1></a>
+    </center>
+    {% block main %}
+    {% endblock main %}
+</body>
+<footer style="position: absolute; bottom:0em; text-align: center; padding:10px;">
+    <a href="{% url 'home' %}">blackpinkinhoainhon</a> | 
+    <a href="{% url 'story' %}">liststories</a> | 
+    <a href="{% url 'create' %}"> +newstory</a>
+</footer>
+</html>

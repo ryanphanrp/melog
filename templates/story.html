@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<hr>
+<h3><b>/list stories song</b></h3>
+<ul>
+    {% for post in object_list %}
+        <li>{{post.body}} - 
+            <small><i>{{post.time}}</i></small> - 
+            <a href="{% url 'edit' post.pk %}"><i style='font-size:12px' class='fas'>&#xf044;</i></a> - 
+            <a href="{% url 'delete' post.pk %}"><i style='font-size:12px' class='fas'>&#xf12d;</i></a></li>
+    {% endfor %}
+</ul>
+<br>
+{% endblock main %}
